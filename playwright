@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/playwright:v1.49.0-noble
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+EXPOSE 3000
+ENV HEADLESS=true
+ENV PORT=3000
+CMD ["npm", "run", "dev"]
