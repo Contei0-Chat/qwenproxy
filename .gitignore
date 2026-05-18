@@ -1,6 +1,5 @@
 node_modules/
 dist/
-qwen_profile/
 .env
 .env.local
 *.log
@@ -8,4 +7,3 @@ qwen_profile/
 coverage/
 .cache/
 .kilo
-qwen_profile/
